@@ -63,13 +63,13 @@ logs/
 *.bak
 backup_original/
 
-# Documentation (exclude from repo)
-README.md
+# Documentation (exclude from repo - except project README)
 INSTALLATION.md
 DEPLOYMENT.md
 FINAL_COMPLETE_GUIDE.md
 LICENSE
 *.md
+!README.md
 !mobile_app/README.md
 !web_app/README.md
 !node_appointments_voice/README.md
