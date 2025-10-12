@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "VoiceCare",
+    "slug": "voicecare",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#1a1a2e",
+      "resizeMode": "cover"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "VoiceCare needs camera access for face recognition login",
+        "NSMicrophoneUsageDescription": "VoiceCare needs microphone access for voice commands"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    }
+  }
+}

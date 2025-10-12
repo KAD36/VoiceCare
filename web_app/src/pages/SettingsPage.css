@@ -1,0 +1,280 @@
+.settings-page {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.settings-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.settings-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.setting-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.setting-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.setting-description {
+  color: #a0aec0;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #475569;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #10b981;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Range Slider */
+.slider-row {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.slider-label {
+  font-size: 0.9rem;
+  color: #a0aec0;
+  font-weight: 600;
+  min-width: 50px;
+}
+
+.range-slider {
+  flex: 1;
+  height: 8px;
+  border-radius: 5px;
+  background: #475569;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #10b981;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.5);
+}
+
+.range-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #10b981;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.5);
+}
+
+.slider-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #10b981;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Test Button */
+.test-button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.test-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Danger Card */
+.danger-card {
+  border-color: rgba(239, 68, 68, 0.3);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.danger-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.danger-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.danger-text {
+  flex: 1;
+  text-align: left;
+}
+
+.danger-text strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.danger-text p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+/* App Info */
+.app-info {
+  text-align: center;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-text {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.info-subtext {
+  font-size: 0.95rem;
+  color: #a0aec0;
+  margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+  .settings-page {
+    padding: 15px;
+  }
+
+  .settings-content {
+    padding: 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .setting-card {
+    padding: 20px;
+  }
+
+  .setting-label {
+    font-size: 1.1rem;
+  }
+
+  .slider-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .slider-label {
+    align-self: flex-start;
+  }
+
+  .range-slider {
+    width: 100%;
+  }
+
+  .danger-button {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .danger-text {
+    text-align: center;
+  }
+
+  .danger-text strong {
+    font-size: 1.1rem;
+  }
+}

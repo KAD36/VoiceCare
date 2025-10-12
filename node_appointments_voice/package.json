@@ -1,0 +1,31 @@
+{
+  "name": "voicecare-appointments",
+  "version": "1.0.0",
+  "description": "VoiceCare Appointments API - Node.js backend for appointment management",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --coverage",
+    "lint": "eslint src/**/*.js"
+  },
+  "keywords": ["voicecare", "appointments", "healthcare", "api"],
+  "author": "King Salman Specialist Hospital",
+  "license": "PROPRIETARY",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "expo-server-sdk": "^3.7.0",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "node-schedule": "^2.1.1",
+    "sqlite3": "^5.1.6",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  }
+}

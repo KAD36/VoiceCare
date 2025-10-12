@@ -1,0 +1,179 @@
+.help-page {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.help-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.help-section {
+  margin-bottom: 50px;
+}
+
+.section-heading {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: white;
+  text-align: center;
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.help-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.help-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.help-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+  background: rgba(16, 185, 129, 0.2);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.help-text {
+  flex: 1;
+}
+
+.help-text h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.help-text p {
+  font-size: 1rem;
+  color: #a0aec0;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.help-action {
+  font-size: 2rem;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+/* Contact Section */
+.contact-section {
+  margin-top: 50px;
+}
+
+.contact-card {
+  background: rgba(16, 185, 129, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 40px 30px;
+  border: 2px solid #10b981;
+  text-align: center;
+}
+
+.contact-card h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #10b981;
+  margin-bottom: 25px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: #e2e8f0;
+  font-weight: 600;
+  margin: 0;
+}
+
+.contact-info strong {
+  color: #10b981;
+  margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .help-page {
+    padding: 15px;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .help-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .help-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .help-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2.5rem;
+  }
+
+  .help-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .help-text p {
+    font-size: 0.95rem;
+  }
+
+  .help-action {
+    margin-top: 10px;
+  }
+
+  .contact-card {
+    padding: 30px 20px;
+  }
+
+  .contact-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-info {
+    gap: 15px;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,108 @@
+.welcome-page {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.welcome-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.welcome-card {
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 40px 30px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  color: white;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.welcome-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.welcome-card.appointments {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  border-color: rgba(37, 99, 235, 0.5);
+}
+
+.welcome-card.services {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-color: rgba(16, 185, 129, 0.5);
+}
+
+.welcome-card.settings {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  border-color: rgba(139, 92, 246, 0.5);
+}
+
+.welcome-card.help {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  border-color: rgba(245, 158, 11, 0.5);
+}
+
+.card-icon {
+  font-size: 4rem;
+}
+
+.welcome-card h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.welcome-card p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.logout-button {
+  display: block;
+  margin: 40px auto 20px;
+  min-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .welcome-page {
+    padding: 15px;
+  }
+
+  .welcome-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .welcome-card {
+    min-height: 180px;
+    padding: 30px 20px;
+  }
+
+  .card-icon {
+    font-size: 3rem;
+  }
+
+  .welcome-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .welcome-card p {
+    font-size: 0.95rem;
+  }
+
+  .logout-button {
+    width: 100%;
+    margin: 30px 0 15px;
+  }
+}
